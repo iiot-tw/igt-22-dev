@@ -1,9 +1,13 @@
 # IGT-22-DEV Quick Installation Guide
 
-## Steps to setup host network (Windows)
-1. Please refer to [IGT-2x manual](https://neousys-web-bucket.s3-us-west-1.amazonaws.com/manual/IGT-20_IGT-21-IoT_IIoT-Gateway-User-Manual.pdf) for configure Ethernet of RNDIS
-
 ## Steps for first initialization
+
+### Steps to setup host network (Windows)
+1. Please refer to [IGT-2x manual](https://neousys-web-bucket.s3-us-west-1.amazonaws.com/manual/IGT-20_IGT-21-IoT_IIoT-Gateway-User-Manual.pdf) for configure Ethernet of RNDIS
 1. Log in to IGT-22-DEV using browsers visiting [http://192.168.7.2:9090](http://192.168.7.2:9090). Please refer to [IGT-2x manual](https://neousys-web-bucket.s3-us-west-1.amazonaws.com/manual/IGT-20_IGT-21-IoT_IIoT-Gateway-User-Manual.pdf) for username and password. After login, click on Terminal at the left panel.
+
+### Provision IGT-22-DEV on Thingsboard
 1. Provision Device on demo.thingsboard.io: follow the [link](https://thingsboard.io/docs/getting-started-guides/helloworld/#step-1-provision-device) except that "Is gateway" has to be checked in step 3.
 1. Get the credential: follow the first 2 steps at the [link](https://thingsboard.io/docs/getting-started-guides/helloworld/#step-2-connect-device). What has to be done is to "Copy access token".
+
+### Run the first initialization script
