@@ -545,133 +545,6 @@
         "col": 0,
         "id": "d3806634-131c-c086-6bd7-42d3f0cf52c1"
       },
-      "6a15d1fd-d8ee-e989-efff-b49da78b3c4e": {
-        "isSystemType": true,
-        "bundleAlias": "cards",
-        "typeAlias": "attributes_card",
-        "type": "latest",
-        "title": "New widget",
-        "sizeX": 7.5,
-        "sizeY": 3,
-        "config": {
-          "datasources": [
-            {
-              "type": "entity",
-              "name": null,
-              "entityAliasId": "c9de1cac-6389-bc2b-4351-06899fa35d82",
-              "dataKeys": [
-                {
-                  "name": "BTN_0",
-                  "type": "timeseries",
-                  "label": "BTN_0",
-                  "color": "#f44336",
-                  "settings": {},
-                  "_hash": 0.6925921149791912
-                },
-                {
-                  "name": "BTN_1",
-                  "type": "timeseries",
-                  "label": "BTN_1",
-                  "color": "#ffc107",
-                  "settings": {},
-                  "_hash": 0.48422003976297034
-                },
-                {
-                  "name": "DI_0",
-                  "type": "timeseries",
-                  "label": "DI_0",
-                  "color": "#2196f3",
-                  "settings": {},
-                  "_hash": 0.6376933744533604
-                },
-                {
-                  "name": "DI_1",
-                  "type": "timeseries",
-                  "label": "DI_1",
-                  "color": "#4caf50",
-                  "settings": {},
-                  "_hash": 0.8274628710425136
-                },
-                {
-                  "name": "DI_2",
-                  "type": "timeseries",
-                  "label": "DI_2",
-                  "color": "#607d8b",
-                  "settings": {},
-                  "_hash": 0.5309694747542477
-                },
-                {
-                  "name": "DI_3",
-                  "type": "timeseries",
-                  "label": "DI_3",
-                  "color": "#9c27b0",
-                  "settings": {},
-                  "_hash": 0.4360190329193925
-                },
-                {
-                  "name": "DI_4",
-                  "type": "timeseries",
-                  "label": "DI_4",
-                  "color": "#8bc34a",
-                  "settings": {},
-                  "_hash": 0.05801142983011487
-                },
-                {
-                  "name": "DI_5",
-                  "type": "timeseries",
-                  "label": "DI_5",
-                  "color": "#3f51b5",
-                  "settings": {},
-                  "_hash": 0.7654307646231673
-                },
-                {
-                  "name": "DI_6",
-                  "type": "timeseries",
-                  "label": "DI_6",
-                  "color": "#e91e63",
-                  "settings": {},
-                  "_hash": 0.8569818838911907
-                },
-                {
-                  "name": "DI_7",
-                  "type": "timeseries",
-                  "label": "DI_7",
-                  "color": "#ffeb3b",
-                  "settings": {},
-                  "_hash": 0.470311090797948
-                }
-              ]
-            }
-          ],
-          "timewindow": {
-            "realtime": {
-              "timewindowMs": 60000
-            }
-          },
-          "showTitle": true,
-          "backgroundColor": "#000000",
-          "color": "#ffffff",
-          "padding": "8px",
-          "settings": {},
-          "title": "Built-in DI/O and Button",
-          "showTitleIcon": false,
-          "iconColor": "rgba(0, 0, 0, 0.87)",
-          "iconSize": "24px",
-          "titleTooltip": "",
-          "dropShadow": true,
-          "enableFullscreen": false,
-          "widgetStyle": {},
-          "titleStyle": {
-            "fontSize": "16px",
-            "fontWeight": 400
-          },
-          "decimals": 0,
-          "showLegend": false
-        },
-        "row": 0,
-        "col": 0,
-        "id": "6a15d1fd-d8ee-e989-efff-b49da78b3c4e"
-      },
       "55e97a0f-faab-bfa2-4bb0-3d7cc1b8c95d": {
         "isSystemType": true,
         "bundleAlias": "cards",
@@ -753,6 +626,237 @@
         "row": 0,
         "col": 0,
         "id": "d8e5dcea-43bf-c788-1e30-497346923eb3"
+      },
+      "e0b434bc-ae48-0860-71de-bba58b4f3dad": {
+        "isSystemType": true,
+        "bundleAlias": "charts",
+        "typeAlias": "state_chart",
+        "type": "timeseries",
+        "title": "New widget",
+        "sizeX": 8,
+        "sizeY": 5,
+        "config": {
+          "datasources": [
+            {
+              "type": "entity",
+              "name": null,
+              "entityAliasId": "c9de1cac-6389-bc2b-4351-06899fa35d82",
+              "filterId": null,
+              "dataKeys": [
+                {
+                  "name": "BTN_0",
+                  "type": "timeseries",
+                  "label": "BTN_0",
+                  "color": "#2196f3",
+                  "settings": {
+                    "excludeFromStacking": false,
+                    "hideDataByDefault": false,
+                    "disableDataHiding": false,
+                    "removeFromLegend": false,
+                    "showLines": true,
+                    "fillLines": false,
+                    "showPoints": false,
+                    "showPointShape": "circle",
+                    "pointShapeFormatter": "var size = radius * Math.sqrt(Math.PI) / 2;\nctx.moveTo(x - size, y - size);\nctx.lineTo(x + size, y + size);\nctx.moveTo(x - size, y + size);\nctx.lineTo(x + size, y - size);",
+                    "showPointsLineWidth": 5,
+                    "showPointsRadius": 3,
+                    "tooltipValueFormatter": "",
+                    "showSeparateAxis": false,
+                    "axisTitle": "",
+                    "axisPosition": "left",
+                    "axisTicksFormatter": "",
+                    "thresholds": [
+                      {
+                        "thresholdValueSource": "predefinedValue"
+                      }
+                    ],
+                    "comparisonSettings": {
+                      "showValuesForComparison": true,
+                      "comparisonValuesLabel": "",
+                      "color": ""
+                    }
+                  },
+                  "_hash": 0.6311947566735656
+                },
+                {
+                  "name": "BTN_1",
+                  "type": "timeseries",
+                  "label": "BTN_1",
+                  "color": "#4caf50",
+                  "settings": {
+                    "excludeFromStacking": false,
+                    "hideDataByDefault": false,
+                    "disableDataHiding": false,
+                    "removeFromLegend": false,
+                    "showLines": true,
+                    "fillLines": false,
+                    "showPoints": false,
+                    "showPointShape": "circle",
+                    "pointShapeFormatter": "var size = radius * Math.sqrt(Math.PI) / 2;\nctx.moveTo(x - size, y - size);\nctx.lineTo(x + size, y + size);\nctx.moveTo(x - size, y + size);\nctx.lineTo(x + size, y - size);",
+                    "showPointsLineWidth": 5,
+                    "showPointsRadius": 3,
+                    "tooltipValueFormatter": "",
+                    "showSeparateAxis": false,
+                    "axisTitle": "",
+                    "axisPosition": "left",
+                    "axisTicksFormatter": "",
+                    "thresholds": [
+                      {
+                        "thresholdValueSource": "predefinedValue"
+                      }
+                    ],
+                    "comparisonSettings": {
+                      "showValuesForComparison": true,
+                      "comparisonValuesLabel": "",
+                      "color": ""
+                    }
+                  },
+                  "_hash": 0.2397349301810634
+                },
+                {
+                  "name": "DI_0",
+                  "type": "timeseries",
+                  "label": "DI_0",
+                  "color": "#f44336",
+                  "settings": {
+                    "excludeFromStacking": false,
+                    "hideDataByDefault": false,
+                    "disableDataHiding": false,
+                    "removeFromLegend": false,
+                    "showLines": true,
+                    "fillLines": false,
+                    "showPoints": false,
+                    "showPointShape": "circle",
+                    "pointShapeFormatter": "var size = radius * Math.sqrt(Math.PI) / 2;\nctx.moveTo(x - size, y - size);\nctx.lineTo(x + size, y + size);\nctx.moveTo(x - size, y + size);\nctx.lineTo(x + size, y - size);",
+                    "showPointsLineWidth": 5,
+                    "showPointsRadius": 3,
+                    "tooltipValueFormatter": "",
+                    "showSeparateAxis": false,
+                    "axisTitle": "",
+                    "axisPosition": "left",
+                    "axisTicksFormatter": "",
+                    "thresholds": [
+                      {
+                        "thresholdValueSource": "predefinedValue"
+                      }
+                    ],
+                    "comparisonSettings": {
+                      "showValuesForComparison": true,
+                      "comparisonValuesLabel": "",
+                      "color": ""
+                    }
+                  },
+                  "_hash": 0.8062156823850068
+                },
+                {
+                  "name": "DI_1",
+                  "type": "timeseries",
+                  "label": "DI_1",
+                  "color": "#ffc107",
+                  "settings": {
+                    "excludeFromStacking": false,
+                    "hideDataByDefault": false,
+                    "disableDataHiding": false,
+                    "removeFromLegend": false,
+                    "showLines": true,
+                    "fillLines": false,
+                    "showPoints": false,
+                    "showPointShape": "circle",
+                    "pointShapeFormatter": "var size = radius * Math.sqrt(Math.PI) / 2;\nctx.moveTo(x - size, y - size);\nctx.lineTo(x + size, y + size);\nctx.moveTo(x - size, y + size);\nctx.lineTo(x + size, y - size);",
+                    "showPointsLineWidth": 5,
+                    "showPointsRadius": 3,
+                    "tooltipValueFormatter": "",
+                    "showSeparateAxis": false,
+                    "axisTitle": "",
+                    "axisPosition": "left",
+                    "axisTicksFormatter": "",
+                    "thresholds": [
+                      {
+                        "thresholdValueSource": "predefinedValue"
+                      }
+                    ],
+                    "comparisonSettings": {
+                      "showValuesForComparison": true,
+                      "comparisonValuesLabel": "",
+                      "color": ""
+                    }
+                  },
+                  "_hash": 0.5512650600370481
+                }
+              ]
+            }
+          ],
+          "timewindow": {
+            "realtime": {
+              "timewindowMs": 60000
+            }
+          },
+          "showTitle": true,
+          "backgroundColor": "#000000",
+          "color": "rgba(255,255,255,0.87)",
+          "padding": "8px",
+          "settings": {
+            "shadowSize": 4,
+            "fontColor": "#545454",
+            "fontSize": 10,
+            "xaxis": {
+              "showLabels": true,
+              "color": "#545454"
+            },
+            "yaxis": {
+              "showLabels": true,
+              "color": "#545454",
+              "ticksFormatter": "if (value > 0 && value <= 1) {\n    return 'On';\n} else if (value === 0) {\n    return 'Off';\n} else {\n    return '';\n}",
+              "min": 0,
+              "max": 1,
+              "tickDecimals": 0
+            },
+            "grid": {
+              "color": "#545454",
+              "tickColor": "#DDDDDD",
+              "verticalLines": true,
+              "horizontalLines": false,
+              "outlineWidth": 1
+            },
+            "stack": false,
+            "tooltipIndividual": false,
+            "tooltipValueFormatter": "if (value > 0 && value <= 1) {\n    return 'On';\n} else if (value === 0) {\n    return 'Off';\n} else {\n    return '';\n}",
+            "smoothLines": false,
+            "timeForComparison": "months",
+            "xaxisSecond": {
+              "axisPosition": "top",
+              "showLabels": true
+            }
+          },
+          "title": "Built-in Button and DI/O",
+          "dropShadow": true,
+          "enableFullscreen": false,
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400
+          },
+          "widgetStyle": {},
+          "useDashboardTimewindow": false,
+          "showLegend": true,
+          "actions": {},
+          "legendConfig": {
+            "direction": "row",
+            "position": "bottom",
+            "sortDataKeys": null,
+            "showMin": false,
+            "showMax": false,
+            "showAvg": false,
+            "showTotal": false
+          },
+          "showTitleIcon": false,
+          "iconColor": "rgba(0, 0, 0, 0.87)",
+          "iconSize": "24px",
+          "titleTooltip": "",
+          "displayTimewindow": true
+        },
+        "row": 0,
+        "col": 0,
+        "id": "e0b434bc-ae48-0860-71de-bba58b4f3dad"
       }
     },
     "states": {
@@ -793,14 +897,6 @@
                 "mobileOrder": 2,
                 "mobileHeight": 4
               },
-              "6a15d1fd-d8ee-e989-efff-b49da78b3c4e": {
-                "sizeX": 9,
-                "sizeY": 7,
-                "row": 7,
-                "col": 15,
-                "mobileOrder": 3,
-                "mobileHeight": 4
-              },
               "55e97a0f-faab-bfa2-4bb0-3d7cc1b8c95d": {
                 "sizeX": 24,
                 "sizeY": 1,
@@ -813,6 +909,12 @@
                 "sizeY": 1,
                 "row": 14,
                 "col": 0
+              },
+              "e0b434bc-ae48-0860-71de-bba58b4f3dad": {
+                "sizeX": 9,
+                "sizeY": 7,
+                "row": 7,
+                "col": 15
               }
             },
             "gridSettings": {
