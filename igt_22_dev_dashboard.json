@@ -692,7 +692,7 @@
           "color": "#ffffff",
           "padding": "8px",
           "settings": {
-            "cardHtml": "<div class='card'>\nNeousys IGT-22 Environmental Monitoring Kit<br>\n</div>",
+            "cardHtml": "<div class='card'>\nNeousys IGT-22-DEV Demo Dashboard<br>\n</div>",
             "cardCss": ".card {\n    font-weight: bold;\n    font-size: 24px;\n    width: 100%;\n    height: 100%;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n}\n.card1 {\n    font-weight: bold;\n    font-size: 24px;\n    width: 100%;\n    height: 100%;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n}"
           },
           "title": "New HTML Card",
@@ -839,7 +839,7 @@
           "resolveMultiple": false,
           "singleEntity": {
             "entityType": "DEVICE",
-            "id": "97c23710-50c1-11eb-83fa-0b3644440037"
+            "id": "20258830-5574-11eb-83fa-0b3644440037"
           }
         }
       },
@@ -851,7 +851,7 @@
           "resolveMultiple": false,
           "singleEntity": {
             "entityType": "DEVICE",
-            "id": "8b42fcc0-50c3-11eb-8779-fbb84bef971e"
+            "id": "805300b0-5575-11eb-83fa-0b3644440037"
           }
         }
       },
@@ -863,7 +863,7 @@
           "resolveMultiple": false,
           "singleEntity": {
             "entityType": "DEVICE",
-            "id": "43d56c70-50c2-11eb-8779-fbb84bef971e"
+            "id": "80373b50-5575-11eb-83fa-0b3644440037"
           }
         }
       }
