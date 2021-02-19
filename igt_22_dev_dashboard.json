@@ -17,7 +17,21 @@
               "type": "entity",
               "name": null,
               "entityAliasId": "8fe5445a-7093-5921-fbbf-5c1a66e97612",
+              "filterId": null,
               "dataKeys": [
+                {
+                  "name": "serialNum",
+                  "type": "attribute",
+                  "label": "serialNum",
+                  "color": "#607d8b",
+                  "settings": {},
+                  "_hash": 0.5527023079261095,
+                  "units": null,
+                  "decimals": 0,
+                  "funcBody": null,
+                  "usePostProcessing": true,
+                  "postFuncBody": "var yr=value.toString().substr(0,2);\nvar sn=value.toString().substr(2,7);\nreturn String.fromCharCode(yr-10+65)+sn;"
+                },
                 {
                   "name": "active",
                   "type": "attribute",
@@ -50,7 +64,7 @@
                   "decimals": null,
                   "funcBody": null,
                   "usePostProcessing": true,
-                  "postFuncBody": "IPs = value.split('&');\n//IPs = value.replaceAll('&','<br>');\nretStr =\"\";\n\nIPs.forEach(function(item){\n    retStr=retStr+item+\"<br>\";\n});\nreturn retStr;"
+                  "postFuncBody": "IPs = value.split('&');\n//IPs = value.replaceAll('&','<br>');\nretStr =\"<br>\";\n\nIPs.forEach(function(item){\n    retStr=retStr+item+\"<br>\";\n});\nreturn retStr;"
                 },
                 {
                   "name": "localIpLastUpdate",
@@ -782,6 +796,76 @@
                     }
                   },
                   "_hash": 0.5512650600370481
+                },
+                {
+                  "name": "DO_0",
+                  "type": "timeseries",
+                  "label": "DO_0",
+                  "color": "#7cbede",
+                  "settings": {
+                    "excludeFromStacking": false,
+                    "hideDataByDefault": false,
+                    "disableDataHiding": false,
+                    "removeFromLegend": false,
+                    "showLines": true,
+                    "fillLines": true,
+                    "showPoints": false,
+                    "showPointShape": "circle",
+                    "pointShapeFormatter": "var size = radius * Math.sqrt(Math.PI) / 2;\nctx.moveTo(x - size, y - size);\nctx.lineTo(x + size, y + size);\nctx.moveTo(x - size, y + size);\nctx.lineTo(x + size, y - size);",
+                    "showPointsLineWidth": 10,
+                    "showPointsRadius": 3,
+                    "showSeparateAxis": false,
+                    "axisPosition": "left",
+                    "thresholds": [
+                      {
+                        "thresholdValueSource": "predefinedValue"
+                      }
+                    ],
+                    "comparisonSettings": {
+                      "showValuesForComparison": true
+                    }
+                  },
+                  "_hash": 0.19421264165331342,
+                  "units": null,
+                  "decimals": null,
+                  "funcBody": null,
+                  "usePostProcessing": null,
+                  "postFuncBody": null
+                },
+                {
+                  "name": "DO_1",
+                  "type": "timeseries",
+                  "label": "DO_1",
+                  "color": "#9c27b0",
+                  "settings": {
+                    "excludeFromStacking": false,
+                    "hideDataByDefault": false,
+                    "disableDataHiding": false,
+                    "removeFromLegend": false,
+                    "showLines": true,
+                    "fillLines": false,
+                    "showPoints": false,
+                    "showPointShape": "circle",
+                    "pointShapeFormatter": "var size = radius * Math.sqrt(Math.PI) / 2;\nctx.moveTo(x - size, y - size);\nctx.lineTo(x + size, y + size);\nctx.moveTo(x - size, y + size);\nctx.lineTo(x + size, y - size);",
+                    "showPointsLineWidth": 5,
+                    "showPointsRadius": 3,
+                    "tooltipValueFormatter": "",
+                    "showSeparateAxis": false,
+                    "axisTitle": "",
+                    "axisPosition": "left",
+                    "axisTicksFormatter": "",
+                    "thresholds": [
+                      {
+                        "thresholdValueSource": "predefinedValue"
+                      }
+                    ],
+                    "comparisonSettings": {
+                      "showValuesForComparison": true,
+                      "comparisonValuesLabel": "",
+                      "color": ""
+                    }
+                  },
+                  "_hash": 0.06038761055463504
                 }
               ]
             }
@@ -876,7 +960,7 @@
               },
               "46e0bc45-ef02-6380-d3f8-05ed0cd16c06": {
                 "sizeX": 15,
-                "sizeY": 7,
+                "sizeY": 5,
                 "row": 7,
                 "col": 0,
                 "mobileOrder": 4
@@ -907,12 +991,12 @@
               "d8e5dcea-43bf-c788-1e30-497346923eb3": {
                 "sizeX": 24,
                 "sizeY": 1,
-                "row": 14,
+                "row": 12,
                 "col": 0
               },
               "e0b434bc-ae48-0860-71de-bba58b4f3dad": {
                 "sizeX": 9,
-                "sizeY": 7,
+                "sizeY": 5,
                 "row": 7,
                 "col": 15
               }
@@ -941,7 +1025,7 @@
           "resolveMultiple": false,
           "singleEntity": {
             "entityType": "DEVICE",
-            "id": "20258830-5574-11eb-83fa-0b3644440037"
+            "id": "81d702d0-66f3-11eb-839c-db4d34f02f5e"
           }
         }
       },
@@ -953,7 +1037,7 @@
           "resolveMultiple": false,
           "singleEntity": {
             "entityType": "DEVICE",
-            "id": "805300b0-5575-11eb-83fa-0b3644440037"
+            "id": "f5e96860-66f4-11eb-839c-db4d34f02f5e"
           }
         }
       },
@@ -965,7 +1049,7 @@
           "resolveMultiple": false,
           "singleEntity": {
             "entityType": "DEVICE",
-            "id": "80373b50-5575-11eb-83fa-0b3644440037"
+            "id": "f5e87e00-66f4-11eb-abf1-db171cd9ed33"
           }
         }
       }
