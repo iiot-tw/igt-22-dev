@@ -3,7 +3,7 @@ IGT-22-DEV is a special version of IGT-22 with pre-installed open source IoT pla
 
 ## Steps for first initialization
 
-### Steps to setup host network (Windows 10) (https://www.automation.iiot.tw/en/hardware/neousys-igt/setting-up-rndis-of-the-host-pc-for-igt-22-dev/)
+### [Steps to setup host network (Windows 10)](https://www.automation.iiot.tw/en/hardware/neousys-igt/setting-up-rndis-of-the-host-pc-for-igt-22-dev/)
 1. Connect IGT-22-DEV with your host PC with an dual USB Type A cable, power on IGT-22-DEV, and wait for a while for IGT-22-DEV's initialization.
 2. Run "devmgmt.msc" to open the Device Manager window, and check if IGT-22-DEV's RNDIS and serial appears. Please note that the numbering you see might be different.
 3. Run "ncpa.cpl" to open the Network Connections window, and find the matching RNDIS interface, for example Ethernet 4 here, of IGT-22-DEV
