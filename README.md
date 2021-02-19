@@ -9,10 +9,17 @@ IGT-22-DEV is a special version of IGT-22 with pre-installed open source IoT pla
 3. Run "ncpa.cpl" to open the Network Connections window, and find the matching RNDIS interface, for example Ethernet 4 here, of IGT-22-DEV
 4. Right click on the Ethernet 4 and then click Properties in the quick menu to open the Property window. And choose TCP/IPv4 and then click Properties button.
 5. Manually set the IP address as 192.168.7.1 and Subnet mask as 255.255.255.252, and the click OK. The network configuration is done. Close all opened windows
-6. Now you can try to log in to IGT-22-DEV using browsers visiting [http://192.168.7.2:9090](http://192.168.7.2:9090). Please refer to [IGT-2x manual](https://neousys-web-bucket.s3-us-west-1.amazonaws.com/manual/IGT-20_IGT-21-IoT_IIoT-Gateway-User-Manual.pdf) for username and password. If you see an unsafe browsing warning, it can be ignored. It's a local link between your host PC and IGT-22-DEV. After login, you can find a web-based Terminal at the left panel if you'd to try.
+6. Now you can try to log in to IGT-22-DEV using browsers visiting [http://192.168.7.2:9090](http://192.168.7.2:9090). If you see an unsafe browsing warning, it can be ignored. It's a local link between your host PC and IGT-22-DEV. Please refer to [IGT-2x manual](https://neousys-web-bucket.s3-us-west-1.amazonaws.com/manual/IGT-20_IGT-21-IoT_IIoT-Gateway-User-Manual.pdf) for username and password. After login, you can find a web-based Terminal at the left panel if you'd to try.
 
 ### Provision IGT-22-DEV on Thingsboard
 1. Provision Device on demo.thingsboard.io: follow the [link](https://thingsboard.io/docs/getting-started-guides/helloworld/#step-1-provision-device) except that "Is gateway" has to be checked in step 3.
 1. Get the credential: follow the first 2 steps at the [link](https://thingsboard.io/docs/getting-started-guides/helloworld/#step-2-connect-device). What has to be done is to "Copy access token".
 
-### Run the first initialization script
+### [Run the first initialization script](https://www.automation.iiot.tw/en/hardware/neousys-igt/running-the-first-initialization-script-on-igt-22-dev/)
+1. Connect IGT-22-DEV with a LAN cable to a router with DHCP and out-bound connectivity. The hardware setup is self-contained and doesn’t really need an Ethernet network. However connecting IGT-22-DEV to the previously provisioned instance of IGT-22-DEV on Thingsboard requires the out-bound LAN connection.
+2. Use a browser to visit http://192.168.7.2 and login. Please refer to [IGT-2x manual](https://neousys-web-bucket.s3-us-west-1.amazonaws.com/manual/IGT-20_IGT-21-IoT_IIoT-Gateway-User-Manual.pdf) for username and password.
+3. After login, click Terminal on the left panel to start the web-based console. And you can see the command line prompt on the right.
+4. Run the initialization script with the host address, shown in the blue rectangular, and the access token, shown in the red rectangular, in the step  Provisioning IGT-22-DEV on Thingsboard.
+5. It will take a while to load NodeRED image, starting the container and other configuration.
+6. After the initialization, the script will reboot IGT-22-DEV. And you’ll see on the web console that IGT-22-DEV is disconnected.
+7. Wait for a while and click Reconnect button. You’ll see the login page again. IGT-22-DEV is now connected to Thingsboard.
