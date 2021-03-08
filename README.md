@@ -25,7 +25,7 @@ IGT-22-DEV is a special version of IGT-22 with pre-installed open source IoT pla
 7. Wait for a while and click Reconnect button. You’ll see the login page again. IGT-22-DEV is now connected to Thingsboard.
 
 ### Import IGT-22-DEV Demo Dashboard on Thingsboard
-1. Download the json file of the demo dashboard.
+1. Download the [json file](https://raw.githubusercontent.com/iiot-tw/igt-22-dev/main/igt_22_dev_dashboard.json) of the demo dashboard.
 2. Follow the section "Dashboard import" of then instruction at the [link](https://thingsboard.io/docs/user-guide/ui/dashboards/)
 3. Open the dashboard "IGT-22-DEV Dashboard" and click the pen icon at the bottom right to enter edit mode.
 4. Click "Entity aliases" icon at the top menu to open Entity aliase window.
