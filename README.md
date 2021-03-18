@@ -1,5 +1,5 @@
 # IGT-22-DEV Quick Installation Guide
-IGT-22-DEV is a special version of IGT-22 with pre-installed open source IoT platform agent, Thingsboard-gateway, as well as other frequently used packages, such as Docker CE and NodeRED. Besides of the following instruction, there is also an silent [video](https://youtu.be/00CZV29nscY), doing the same, on Youtube
+IGT-22-DEV is a special version of IGT-22 with pre-installed open source IoT platform agent, Thingsboard-gateway, as well as other frequently used packages, such as Docker CE and NodeRED. In addition to the following instruction in text, there is also an silent [video](https://youtu.be/00CZV29nscY), doing the same, on Youtube
 
 ## Steps for first initialization
 
