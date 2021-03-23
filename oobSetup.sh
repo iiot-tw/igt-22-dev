@@ -1,12 +1,13 @@
 #!/bin/bash
-if ! id | grep -q root; then
-        echo "must be run as root"
-        exit
-fi
 
 if [ "x$1" == "x" ] || [ "x$2" == "x" ]; then
   echo "Usage: $0 {thingsboard_host} {thingsboard_token}"
   exit 1
+fi
+
+if ! id | grep -q root; then
+        echo "must be run as root"
+        exit
 fi
 
 /neousys/eth0dhcp.sh
