@@ -16,21 +16,36 @@ chmod 666 /sys/class/gpio/gpio104/value
 chmod 666 /sys/class/gpio/gpio7/value
 chmod 666 /sys/class/gpio/gpio103/value
 
-export DO0=/sys/class/gpio/gpio111/value
-export DO1=/sys/class/gpio/gpio110/value
-export DO2=/sys/class/gpio/gpio112/value
-export DO3=/sys/class/gpio/gpio113/value
-export DO4=/sys/class/gpio/gpio117/value
-export DO5=/sys/class/gpio/gpio104/value
-export DO6=/sys/class/gpio/gpio7/value
-export DO7=/sys/class/gpio/gpio103/value
-
 chmod 666 /sys/class/leds/igt22\:\:usr1/brightness
 chmod 666 /sys/class/leds/igt22\:\:usr4/brightness
 chmod 666 /sys/class/leds/igt22\:\:usr5/brightness
-export LED1=/sys/class/leds/igt22\:\:usr1/brightness
-export LED4=/sys/class/leds/igt22\:\:usr4/brightness
-export LED5=/sys/class/leds/igt22\:\:usr5/brightness
+
+LED1=$(cat /etc/environment | grep LED1)
+#igt22 led1 1
+if [ "x$LED1" = "x" ]; then
+#        igt22 led4 1
+        echo "export LED1=/sys/class/leds/igt22\:\:usr1/brightness" >> /etc/environment
+#else
+#        igt22 led5 1
+fi
+
+LED4=$(cat /etc/environment | grep LED4)
+#igt22 led1 1
+if [ "x$LED4" = "x" ]; then
+#        igt22 led4 1
+        echo "export LED4=/sys/class/leds/igt22\:\:usr4/brightness" >> /etc/environment
+#else
+#        igt22 led5 1
+fi
+
+LED5=$(cat /etc/environment | grep LED5)
+#igt22 led1 1
+if [ "x$LED5" = "x" ]; then
+#        igt22 led4 1
+        echo "export LED5=/sys/class/leds/igt22\:\:usr5/brightness" >> /etc/environment
+#else
+#        igt22 led5 1
+fi
 
 #docker start igtnodered
 echo "${log} end"
