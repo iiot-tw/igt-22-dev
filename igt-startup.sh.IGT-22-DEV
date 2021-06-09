@@ -15,5 +15,22 @@ chmod 666 /sys/class/gpio/gpio117/value
 chmod 666 /sys/class/gpio/gpio104/value
 chmod 666 /sys/class/gpio/gpio7/value
 chmod 666 /sys/class/gpio/gpio103/value
+
+export DO0=/sys/class/gpio/gpio111/value
+export DO1=/sys/class/gpio/gpio110/value
+export DO2=/sys/class/gpio/gpio112/value
+export DO3=/sys/class/gpio/gpio113/value
+export DO4=/sys/class/gpio/gpio117/value
+export DO5=/sys/class/gpio/gpio104/value
+export DO6=/sys/class/gpio/gpio7/value
+export DO7=/sys/class/gpio/gpio103/value
+
+chmod 666 /sys/class/leds/igt22\:\:usr1/brightness
+chmod 666 /sys/class/leds/igt22\:\:usr4/brightness
+chmod 666 /sys/class/leds/igt22\:\:usr5/brightness
+export LED1=/sys/class/leds/igt22\:\:usr1/brightness
+export LED4=/sys/class/leds/igt22\:\:usr4/brightness
+export LED5=/sys/class/leds/igt22\:\:usr5/brightness
+
 #docker start igtnodered
 echo "${log} end"
