@@ -16,6 +16,7 @@ chmod 666 /sys/class/gpio/gpio104/value
 chmod 666 /sys/class/gpio/gpio7/value
 chmod 666 /sys/class/gpio/gpio103/value
 
+# 2021/6/24 appended for IGT-22-DEV Made Easy Series - episode 3
 chmod 666 /sys/class/leds/igt22\:\:usr1/brightness
 chmod 666 /sys/class/leds/igt22\:\:usr4/brightness
 chmod 666 /sys/class/leds/igt22\:\:usr5/brightness
@@ -46,6 +47,7 @@ if [ "x$LED5" = "x" ]; then
 #else
 #        igt22 led5 1
 fi
+# appended for IGT-22-DEV Made Easy Series - episode 3
 
 #docker start igtnodered
 echo "${log} end"
