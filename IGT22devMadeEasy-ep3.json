@@ -2,15 +2,15 @@
    {
       "id":"db039ba6.a17fe8",
       "type":"file",
-      "z":"c0a3ed21.91a69",
+      "z":"84a2a955.0a1bf8",
       "name":"DO_1_Dehumidifier",
       "filename":"/sys/class/gpio/gpio110/value",
       "appendNewline":false,
       "createDir":false,
       "overwriteFile":"true",
       "encoding":"none",
-      "x":910,
-      "y":180,
+      "x":990,
+      "y":200,
       "wires":[
          [
             "89e5b499.eddd68"
@@ -20,15 +20,15 @@
    {
       "id":"e92432b7.05655",
       "type":"file",
-      "z":"c0a3ed21.91a69",
+      "z":"84a2a955.0a1bf8",
       "name":"DO_0_Humidifier",
       "filename":"/sys/class/gpio/gpio111/value",
       "appendNewline":false,
       "createDir":true,
       "overwriteFile":"true",
       "encoding":"none",
-      "x":910,
-      "y":80,
+      "x":990,
+      "y":100,
       "wires":[
          [
             "7fea593f.9d8108"
@@ -38,19 +38,19 @@
    {
       "id":"47799f8e.d33a1",
       "type":"switch",
-      "z":"c0a3ed21.91a69",
+      "z":"84a2a955.0a1bf8",
       "name":"humidity check",
       "property":"payload[1]",
       "propertyType":"msg",
       "rules":[
          {
             "t":"lt",
-            "v":"580",
+            "v":"400",
             "vt":"num"
          },
          {
             "t":"gt",
-            "v":"584",
+            "v":"500",
             "vt":"str"
          },
          {
@@ -60,27 +60,24 @@
       "checkall":"false",
       "repair":false,
       "outputs":3,
-      "x":320,
-      "y":100,
+      "x":400,
+      "y":120,
       "wires":[
          [
-            "a6e66b04.dd89e8",
-            "e4acb80d.ae9df8"
+            
          ],
          [
-            "226d9519.3e709a",
-            "c008f94a.7979b8"
+            
          ],
          [
-            "e4acb80d.ae9df8",
-            "c008f94a.7979b8"
+            
          ]
       ]
    },
    {
       "id":"226d9519.3e709a",
       "type":"change",
-      "z":"c0a3ed21.91a69",
+      "z":"84a2a955.0a1bf8",
       "name":"Turn on Dehumidifier",
       "rules":[
          {
@@ -89,13 +86,6 @@
             "pt":"msg",
             "to":"1",
             "tot":"str"
-         },
-         {
-            "t":"set",
-            "p":"machine",
-            "pt":"msg",
-            "to":"DehumidifierOn",
-            "tot":"str"
          }
       ],
       "action":"",
@@ -103,8 +93,8 @@
       "from":"",
       "to":"",
       "reg":false,
-      "x":600,
-      "y":140,
+      "x":680,
+      "y":180,
       "wires":[
          [
             "db039ba6.a17fe8"
@@ -114,7 +104,7 @@
    {
       "id":"c008f94a.7979b8",
       "type":"change",
-      "z":"c0a3ed21.91a69",
+      "z":"84a2a955.0a1bf8",
       "name":"Turn off Humidifier",
       "rules":[
          {
@@ -123,13 +113,6 @@
             "pt":"msg",
             "to":"0",
             "tot":"str"
-         },
-         {
-            "t":"set",
-            "p":"machine",
-            "pt":"msg",
-            "to":"HumidifierOff",
-            "tot":"str"
          }
       ],
       "action":"",
@@ -137,8 +120,8 @@
       "from":"",
       "to":"",
       "reg":false,
-      "x":590,
-      "y":80,
+      "x":670,
+      "y":220,
       "wires":[
          [
             "e92432b7.05655"
@@ -148,7 +131,7 @@
    {
       "id":"e4acb80d.ae9df8",
       "type":"change",
-      "z":"c0a3ed21.91a69",
+      "z":"84a2a955.0a1bf8",
       "name":"Turn off Dehumidifier",
       "rules":[
          {
@@ -157,13 +140,6 @@
             "pt":"msg",
             "to":"0",
             "tot":"str"
-         },
-         {
-            "t":"set",
-            "p":"machine",
-            "pt":"msg",
-            "to":"DehumidifierOff",
-            "tot":"str"
          }
       ],
       "action":"",
@@ -171,8 +147,8 @@
       "from":"",
       "to":"",
       "reg":false,
-      "x":600,
-      "y":180,
+      "x":680,
+      "y":100,
       "wires":[
          [
             "db039ba6.a17fe8"
@@ -182,7 +158,7 @@
    {
       "id":"a6e66b04.dd89e8",
       "type":"change",
-      "z":"c0a3ed21.91a69",
+      "z":"84a2a955.0a1bf8",
       "name":"Turn on Humidifier",
       "rules":[
          {
@@ -191,13 +167,6 @@
             "pt":"msg",
             "to":"1",
             "tot":"str"
-         },
-         {
-            "t":"set",
-            "p":"machine",
-            "pt":"msg",
-            "to":"HumidifierOn",
-            "tot":"str"
          }
       ],
       "action":"",
@@ -205,8 +174,8 @@
       "from":"",
       "to":"",
       "reg":false,
-      "x":590,
-      "y":40,
+      "x":670,
+      "y":60,
       "wires":[
          [
             "e92432b7.05655"
@@ -216,15 +185,15 @@
    {
       "id":"7fea593f.9d8108",
       "type":"file",
-      "z":"c0a3ed21.91a69",
+      "z":"84a2a955.0a1bf8",
       "name":"L4",
       "filename":"/sys/class/leds/igt22::usr4/brightness",
       "appendNewline":false,
       "createDir":true,
       "overwriteFile":"true",
       "encoding":"none",
-      "x":1110,
-      "y":80,
+      "x":1190,
+      "y":100,
       "wires":[
          [
             
@@ -234,15 +203,15 @@
    {
       "id":"89e5b499.eddd68",
       "type":"file",
-      "z":"c0a3ed21.91a69",
+      "z":"84a2a955.0a1bf8",
       "name":"L5",
       "filename":"/sys/class/leds/igt22::usr5/brightness",
       "appendNewline":false,
       "createDir":true,
       "overwriteFile":"true",
       "encoding":"none",
-      "x":1110,
-      "y":180,
+      "x":1190,
+      "y":200,
       "wires":[
          [
             
