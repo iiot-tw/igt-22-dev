@@ -13,7 +13,7 @@
       "y":180,
       "wires":[
          [
-            
+            "44f315e5.7f6aec"
          ]
       ]
    },
@@ -31,7 +31,7 @@
       "y":80,
       "wires":[
          [
-            
+            "f9064914.dec258"
          ]
       ]
    },
@@ -61,7 +61,7 @@
       "repair":false,
       "outputs":3,
       "x":320,
-      "y":100,
+      "y":160,
       "wires":[
          [
             "c73d54e0.1c4638",
@@ -89,13 +89,6 @@
             "pt":"msg",
             "to":"1",
             "tot":"str"
-         },
-         {
-            "t":"set",
-            "p":"machine",
-            "pt":"msg",
-            "to":"DehumidifierOn",
-            "tot":"str"
          }
       ],
       "action":"",
@@ -104,7 +97,7 @@
       "to":"",
       "reg":false,
       "x":600,
-      "y":140,
+      "y":180,
       "wires":[
          [
             "483e0262.1a198c"
@@ -123,13 +116,6 @@
             "pt":"msg",
             "to":"0",
             "tot":"str"
-         },
-         {
-            "t":"set",
-            "p":"machine",
-            "pt":"msg",
-            "to":"HumidifierOff",
-            "tot":"str"
          }
       ],
       "action":"",
@@ -138,7 +124,7 @@
       "to":"",
       "reg":false,
       "x":590,
-      "y":80,
+      "y":220,
       "wires":[
          [
             "6715419d.fd0f"
@@ -157,13 +143,6 @@
             "pt":"msg",
             "to":"0",
             "tot":"str"
-         },
-         {
-            "t":"set",
-            "p":"machine",
-            "pt":"msg",
-            "to":"DehumidifierOff",
-            "tot":"str"
          }
       ],
       "action":"",
@@ -172,7 +151,7 @@
       "to":"",
       "reg":false,
       "x":600,
-      "y":180,
+      "y":120,
       "wires":[
          [
             "483e0262.1a198c"
@@ -191,13 +170,6 @@
             "pt":"msg",
             "to":"1",
             "tot":"str"
-         },
-         {
-            "t":"set",
-            "p":"machine",
-            "pt":"msg",
-            "to":"HumidifierOn",
-            "tot":"str"
          }
       ],
       "action":"",
@@ -206,10 +178,46 @@
       "to":"",
       "reg":false,
       "x":590,
-      "y":40,
+      "y":80,
       "wires":[
          [
             "6715419d.fd0f"
+         ]
+      ]
+   },
+   {
+      "id":"f9064914.dec258",
+      "type":"file",
+      "z":"890ea481.cce2d8",
+      "name":"L4",
+      "filename":"/sys/class/leds/igt22::usr4/brightness",
+      "appendNewline":false,
+      "createDir":true,
+      "overwriteFile":"true",
+      "encoding":"none",
+      "x":1110,
+      "y":80,
+      "wires":[
+         [
+            
+         ]
+      ]
+   },
+   {
+      "id":"44f315e5.7f6aec",
+      "type":"file",
+      "z":"890ea481.cce2d8",
+      "name":"L5",
+      "filename":"/sys/class/leds/igt22::usr5/brightness",
+      "appendNewline":false,
+      "createDir":true,
+      "overwriteFile":"true",
+      "encoding":"none",
+      "x":1110,
+      "y":180,
+      "wires":[
+         [
+            
          ]
       ]
    }
