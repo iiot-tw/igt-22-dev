@@ -129,13 +129,6 @@
             "pt":"msg",
             "to":"1",
             "tot":"str"
-         },
-         {
-            "t":"set",
-            "p":"machine",
-            "pt":"msg",
-            "to":"DehumidifierOn",
-            "tot":"str"
          }
       ],
       "action":"",
@@ -162,13 +155,6 @@
             "p":"payload",
             "pt":"msg",
             "to":"0",
-            "tot":"str"
-         },
-         {
-            "t":"set",
-            "p":"machine",
-            "pt":"msg",
-            "to":"HumidifierOff",
             "tot":"str"
          }
       ],
@@ -197,13 +183,6 @@
             "pt":"msg",
             "to":"0",
             "tot":"str"
-         },
-         {
-            "t":"set",
-            "p":"machine",
-            "pt":"msg",
-            "to":"DehumidifierOff",
-            "tot":"str"
          }
       ],
       "action":"",
@@ -230,13 +209,6 @@
             "p":"payload",
             "pt":"msg",
             "to":"1",
-            "tot":"str"
-         },
-         {
-            "t":"set",
-            "p":"machine",
-            "pt":"msg",
-            "to":"HumidifierOn",
             "tot":"str"
          }
       ],
